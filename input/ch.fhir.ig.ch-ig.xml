@@ -5,22 +5,22 @@
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      Implementation Guide for Medgate PMS
+      Implementation Guide for med PMS
     </div>
   </text>
-  <url value="http://medgate.ch/ig/pms/ImplementationGuide/ch.fhir.ig.ch-ig"/>
+  <url value="http://med.ch/ig/pms/ImplementationGuide/ch.fhir.ig.ch-ig"/>
   <version value="0.1.0"/>
   <name value="CH_IG"/>
   <title value="CH IG (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-07-02"/>
-  <publisher value="Medgate"/>
+  <publisher value="med"/>
   <contact>
-    <name value="Medgate"/>
+    <name value="med"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.medgate.ch/"/>
+      <value value="https://www.med.ch/"/>
     </telecom>
   </contact>
   <jurisdiction>
@@ -41,7 +41,7 @@
       </reference>
       <name value="Zuweisung"/>
       <description value="Example for Composition"/>
-      <exampleCanonical value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-composition"/>
+      <exampleCanonical value="http://med.ch/ig/pms/StructureDefinition/pms-ig-composition"/>
     </resource>
     <resource>
       <reference>
@@ -49,7 +49,7 @@
       </reference>
       <name value="FranzMuster"/>
       <description value="Example for Patient"/>
-      <exampleCanonical value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-patient"/>
+      <exampleCanonical value="http://med.ch/ig/pms/StructureDefinition/pms-ig-patient"/>
     </resource>
 
     <!-- References to code systems -->

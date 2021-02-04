@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="pms-ig-patient" />
-  <url value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-patient" />
+  <url value="http://med.ch/ig/pms/StructureDefinition/pms-ig-patient" />
   <version value="0.1.0" />
   <name value="PMSIGPatient" />
   <title value="Patient Profile" />
   <status value="draft" />
   <date value="2021-02-03" />
-  <publisher value="Medgate" />
-  <contact>
-    <name value="Medgate" />
-  </contact>
+  <publisher value="Med" />
   <description value="IG patient definition is just an example!" />
   <jurisdiction>
     <coding>
@@ -38,11 +35,9 @@
     <element id="Patient.extension:citizenship">
       <path value="Patient.extension" />
       <sliceName value="citizenship" />
-      <short value="Identification document attributes" />
-      <definition value="test" />
       <type>
         <code value="Extension" />
-        <profile value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+        <profile value="http://med.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
       </type>
     </element>
     <element id="Patient.name">

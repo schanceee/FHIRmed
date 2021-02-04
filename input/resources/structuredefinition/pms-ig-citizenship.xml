@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="pms-ig-citizenship" />
-  <url value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+  <url value="http://med.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
   <version value="0.1.0" />
   <name value="PMSIGCitizenship" />
   <status value="draft" />
   <date value="2021-02-03" />
-  <publisher value="Medgate" />
+  <publisher value="Med" />
   <description value="citizenship extension inspired from http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -85,7 +85,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+      <fixedUri value="http://med.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
