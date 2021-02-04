@@ -5,22 +5,22 @@
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      Implementation Guide for CH IG (R4)
+      Implementation Guide for Medgate PMS
     </div>
   </text>
-  <url value="http://fhir.ch/ig/ch-ig/ImplementationGuide/ch.fhir.ig.ch-ig"/>
+  <url value="http://medgate.ch/ig/pms/ImplementationGuide/ch.fhir.ig.ch-ig"/>
   <version value="0.1.0"/>
   <name value="CH_IG"/>
   <title value="CH IG (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-07-02"/>
-  <publisher value="HL7 Switzerland"/>
+  <publisher value="Medgate"/>
   <contact>
-    <name value="HL7 Switzerland"/>
+    <name value="Medgate"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.ch/"/>
+      <value value="https://www.medgate.ch/"/>
     </telecom>
   </contact>
   <jurisdiction>
@@ -41,7 +41,7 @@
       </reference>
       <name value="Zuweisung"/>
       <description value="Example for Composition"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-ig/StructureDefinition/ch-ig-composition"/>
+      <exampleCanonical value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-composition"/>
     </resource>
     <resource>
       <reference>
@@ -49,7 +49,7 @@
       </reference>
       <name value="FranzMuster"/>
       <description value="Example for Patient"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-ig/StructureDefinition/ch-ig-patient"/>
+      <exampleCanonical value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-patient"/>
     </resource>
 
     <!-- References to code systems -->
@@ -60,16 +60,22 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <!-- References to structure definitions -->
+    <!-- References to structure definition -->
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ig-composition"/>
+        <reference value="StructureDefinition/pms-ig-citizenship"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ig-patient"/>
+        <reference value="StructureDefinition/pms-ig-composition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/pms-ig-patient"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

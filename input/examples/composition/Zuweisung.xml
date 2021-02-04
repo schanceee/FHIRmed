@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Composition xmlns="http://hl7.org/fhir">
-  <id value="Zuweisung"/>
+  <id value="Zuweisung" />
   <meta>
-    <profile value="http://fhir.ch/ig/ch-ig/StructureDefinition/ch-ig-composition"/>
+    <profile value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-composition" />
   </meta>
-  <status value="final"/>
+  <status value="final" />
   <type>
     <coding>
-      <system value="http://loinc.org"/>
-      <code value="28616-1"/>
-      <display value="Physician Transfer note"/>
+      <system value="http://loinc.org" />
+      <code value="28616-1" />
+      <display value="Physician Transfer note" />
     </coding>
   </type>
   <subject>
-    <reference value="Patient/FranzMuster"/>
+    <reference value="Patient/FranzMuster" />
   </subject>
-  <date value="2020-01-10T17:33:00+01:00"/>
+  <date value="2020-01-10T17:33:00+01:00" />
   <author>
-    <reference value="Patient/FranzMuster"/>
+    <reference value="Patient/FranzMuster" />
   </author>
-  <title value="Zuweisung"/>
+  <title value="Zuweisung" />
 </Composition>

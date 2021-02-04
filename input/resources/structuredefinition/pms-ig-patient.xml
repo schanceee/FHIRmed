@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="pms-ig-patient" />
+  <url value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-patient" />
+  <version value="0.1.0" />
+  <name value="PMSIGPatient" />
+  <title value="Patient Profile" />
+  <status value="draft" />
+  <date value="2021-02-03" />
+  <publisher value="Medgate" />
+  <contact>
+    <name value="Medgate" />
+  </contact>
+  <description value="IG patient definition is just an example!" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="DE" />
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.extension:citizenship">
+      <path value="Patient.extension" />
+      <sliceName value="citizenship" />
+      <short value="Identification document attributes" />
+      <definition value="test" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+      </type>
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.family">
+      <path value="Patient.name.family" />
+      <min value="1" />
+    </element>
+    <element id="Patient.name.given">
+      <path value="Patient.name.given" />
+      <min value="1" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <min value="1" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

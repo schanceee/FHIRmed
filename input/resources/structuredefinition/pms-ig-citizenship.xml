@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="pms-ig-citizenship" />
+  <url value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+  <version value="0.1.0" />
+  <name value="PMSIGCitizenship" />
+  <status value="draft" />
+  <date value="2021-02-03" />
+  <publisher value="Medgate" />
+  <description value="citizenship extension inspired from http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Composition" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:Nationality">
+      <path value="Extension.extension" />
+      <sliceName value="Nationality" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Nationality.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Nationality" />
+    </element>
+    <element id="Extension.extension:Nationality.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:DocumentNumber">
+      <path value="Extension.extension" />
+      <sliceName value="DocumentNumber" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:DocumentNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="DocumentNumber" />
+    </element>
+    <element id="Extension.extension:DocumentNumber.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:DocumentType">
+      <path value="Extension.extension" />
+      <sliceName value="DocumentType" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:DocumentType.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="DocumentType" />
+    </element>
+    <element id="Extension.extension:DocumentType.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://medgate.ch/ig/pms/StructureDefinition/pms-ig-citizenship" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
